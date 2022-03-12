@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">grocerList</string>
+    <string name="grocery_list">Grocery List</string>
+    <string name="new_list_button">New List</string>
+    <string name="toastMessage">hey</string>
+    <string name="product">Product</string>
+    <string name="name">Name</string>
+    <string name="append">append</string>
+</resources>

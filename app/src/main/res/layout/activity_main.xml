@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/newListButton"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/teal_700"
+        android:backgroundTint="#000000"
+        android:text="@string/new_list_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productList"
+        android:layout_width="0dp"
+        android:layout_height="257dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:paddingLeft="20dp"
+        android:paddingEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/newListButton" />
+
+    <Button
+        android:id="@+id/appendProduct_button"
+        android:layout_width="110dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="300dp"
+        android:elegantTextHeight="true"
+        android:text="@string/append"
+        android:textColor="#4A148C"
+        app:layout_constraintBottom_toBottomOf="@+id/newProduct_input"
+        app:layout_constraintStart_toStartOf="@+id/newProduct_input"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/newProduct_input"
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="4dp"
+        android:autofillHints="@string/product"
+        android:background="@color/white"
+        android:elevation="5dp"
+        android:ems="10"
+        android:hint="@string/product"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:shadowColor="#000000"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="0"
+        android:text="@string/name"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
