@@ -10,12 +10,13 @@
         android:id="@+id/productName_textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:elevation="5dp"
-        android:shadowColor="#959595"
+        android:elevation="60dp"
+        android:shadowColor="#FFFFFF"
         android:shadowDx="0"
         android:shadowDy="0"
         android:shadowRadius="0"
         android:textAlignment="center"
-        android:textSize="30dp" />
+        android:textColor="#E2000000"
+        android:textSize="25dp" />
 
 </RelativeLayout>
